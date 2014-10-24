@@ -31,12 +31,12 @@ class ViewController: UIViewController {
         let homeRent = Double((houseRentText.text as NSString).doubleValue)
         let waterBil = Double((waterBillText.text as NSString).doubleValue)
         let internetBil = Double((internetBillText.text as NSString).doubleValue)
-        let electricBil = Double((electricBillText.text as NSString).doubleValue)
-        let totalMates = Double((totalMatesText.text as NSString).doubleValue)
+        let electricBil = Double((electricBillText.text as NSString).doubleValue)        
+        let totalMates = totalMatesText.text.toInt()!
         
         rentCalcLabel.hidden = false
         totalMatesText.resignFirstResponder()
-        rentCalcLabel.text = "\((homeRent + waterBil + internetBil + electricBil) / totalMates)"
+        rentCalcLabel.text = "\((homeRent + waterBil + internetBil + electricBil) / Double(totalMates))"
     }
 
 }
