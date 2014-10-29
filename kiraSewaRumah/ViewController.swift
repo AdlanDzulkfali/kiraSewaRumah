@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var waterBillText: UITextField!
     @IBOutlet weak var internetBillText: UITextField!
     @IBOutlet weak var totalMatesText: UITextField!
+    @IBOutlet weak var currencyText: UITextField!
     
     @IBOutlet weak var rentCalcLabel: UILabel!
+    @IBOutlet weak var showCurrency: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +35,19 @@ class ViewController: UIViewController {
         let internetBil = Double((internetBillText.text as NSString).doubleValue)
         let electricBil = Double((electricBillText.text as NSString).doubleValue)        
         let totalMates = totalMatesText.text.toInt()!
+        let currencyTextView = currencyText.text
+        showCurrency.hidden = false
+        showCurrency.text = currencyTextView
         
         rentCalcLabel.hidden = false
         totalMatesText.resignFirstResponder()
+        
+        if totalMates <= 0 {
+            rentCalcLabel.text = "0"
+        }
+        else {
         rentCalcLabel.text = "\((homeRent + waterBil + internetBil + electricBil) / Double(totalMates))"
+        }
     }
 
 }

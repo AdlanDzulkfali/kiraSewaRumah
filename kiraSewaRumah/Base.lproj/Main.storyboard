@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st Step" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0b-Kb-5ji">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert All The Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0b-Kb-5ji">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="40" width="65" height="21"/>
+                                    <rect key="frame" x="24" y="85" width="157" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Water Bill" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYL-TL-JMQ">
@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="145" width="240" height="30"/>
+                                    <rect key="frame" x="24" y="190" width="240" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-Zs-1pP">
@@ -42,7 +42,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="323" width="90" height="30"/>
+                                    <rect key="frame" x="24" y="304" width="90" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="calculateAll:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ggg-q9-gGd"/>
@@ -53,7 +53,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="69" width="240" height="30"/>
+                                    <rect key="frame" x="24" y="114" width="240" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Electric Bill" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0c-9X-CNd">
@@ -61,24 +61,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="107" width="240" height="30"/>
+                                    <rect key="frame" x="24" y="152" width="240" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd Step" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApT-nU-1oJ">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="232" width="70" height="21"/>
-                                </variation>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Internet Bill" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WEO-kp-OJ5">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="183" width="240" height="30"/>
+                                    <rect key="frame" x="24" y="228" width="240" height="30"/>
                                 </variation>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="calcLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC4-16-kiH">
@@ -104,9 +95,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="261" width="240" height="30"/>
+                                    <rect key="frame" x="24" y="266" width="240" height="30"/>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Your Currency :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiP-qI-ldG">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="31" width="135" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ije-1x-CRA">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="159" y="29" width="44" height="30"/>
+                                </variation>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bK-36-nZW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="151" y="450" width="67" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -116,11 +133,13 @@
                                 <exclude reference="vxh-Zs-1pP"/>
                                 <exclude reference="b1D-mC-0M4"/>
                                 <exclude reference="l0c-9X-CNd"/>
-                                <exclude reference="ApT-nU-1oJ"/>
                                 <exclude reference="WEO-kp-OJ5"/>
                                 <exclude reference="KC4-16-kiH"/>
                                 <exclude reference="krO-xS-pRM"/>
                                 <exclude reference="8uw-Ik-9s7"/>
+                                <exclude reference="MiP-qI-ldG"/>
+                                <exclude reference="ije-1x-CRA"/>
+                                <exclude reference="1bK-36-nZW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -130,21 +149,25 @@
                                 <include reference="vxh-Zs-1pP"/>
                                 <include reference="b1D-mC-0M4"/>
                                 <include reference="l0c-9X-CNd"/>
-                                <include reference="ApT-nU-1oJ"/>
                                 <include reference="WEO-kp-OJ5"/>
                                 <include reference="KC4-16-kiH"/>
                                 <include reference="krO-xS-pRM"/>
                                 <include reference="8uw-Ik-9s7"/>
+                                <include reference="MiP-qI-ldG"/>
+                                <include reference="ije-1x-CRA"/>
+                                <include reference="1bK-36-nZW"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="currencyText" destination="ije-1x-CRA" id="hVk-Sn-jJq"/>
                         <outlet property="electricBillText" destination="l0c-9X-CNd" id="PeY-P3-5dC"/>
                         <outlet property="houseRentText" destination="b1D-mC-0M4" id="Nxx-0e-MWg"/>
                         <outlet property="internetBillText" destination="WEO-kp-OJ5" id="dl7-yf-x2D"/>
                         <outlet property="rentCalcLabel" destination="KC4-16-kiH" id="k7j-Yg-KGM"/>
+                        <outlet property="showCurrency" destination="1bK-36-nZW" id="8kj-u7-dac"/>
                         <outlet property="totalMatesText" destination="8uw-Ik-9s7" id="HDb-uG-2jV"/>
                         <outlet property="waterBillText" destination="YYL-TL-JMQ" id="vyC-bh-fHP"/>
                     </connections>
